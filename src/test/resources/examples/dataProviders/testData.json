@@ -1,0 +1,57 @@
+{
+	"createNewAccountScenario": [
+		{
+			"iterationName": "Create New Account",
+			"data": [
+				{
+					"name": "accountName",
+					"value": "test123"
+				},
+				{
+					"name": "firstName",
+					"value": "AutomationTester"
+				},
+				{
+					"name": "lastName",
+					"value": "Test123"
+				}
+			]
+		},
+		{
+			"iterationName": "Create New Account second iteration",
+			"data": [
+				{
+					"name": "accountName",
+					"value": "test123"
+				},
+				{
+					"name": "firstName",
+					"value": "AutomationTester"
+				},
+				{
+					"name": "lastName",
+					"value": "Test123"
+				}
+			]
+		}
+	],
+	"updateExistingAccountScenario": [
+		{
+			"iterationName": "Update Account",
+			"data": [
+				{
+					"name": "accountName",
+					"value": "test123"
+				},
+				{
+					"name": "firstName",
+					"value": "UpdatedFirstName"
+				},
+				{
+					"name": "lastName",
+					"value": "UpdatedLastName"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,30 @@
+{
+	"negativeLoginScenario": [
+		{
+			"iterationName": "Login with wrong credentials",
+			"data": [
+				{
+					"name": "username",
+					"value": "test123"
+				},
+				{
+					"name": "password",
+					"value": "AutomationTester"
+				}
+			]
+		},
+		{
+			"iterationName": "Login with wrong credentials 2nd iteration",
+			"data": [
+				{
+					"name": "username",
+					"value": "test$$$"
+				},
+				{
+					"name": "password",
+					"value": "###jkjkj"
+				}
+			]
+		}
+	]
+}

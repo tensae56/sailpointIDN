@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke Test" data-provider-thread-count="10"
+	parallel="tests" thread-count="15">
+	<listeners>
+		<listener
+			class-name="com.framework.utils.listeners.TestListener" />
+		<listener
+			class-name="com.framework.utils.listeners.CustomizedEmailableReport" />
+	</listeners>
+	<parameter name="browserUnderTest" value="chrome" />
+	<parameter name="environment" value="test" />
+	<parameter name="runLocation" value="docker" />
+	<parameter name="browserVersion" value="" />
+	<parameter name="operatingSystem" value="Linux" />
+	<parameter name="updateVersionOne" value="true" />
+
+
+	<test name="Validate Portal Tabs">
+		<classes>
+			<class name="com.allegis.snow.UI.ServicePortalFunctionality"/>
+		</classes>
+	</test>
+	
+		<test name="Verify Service Now Login with different Users">
+		<classes>
+			<class name="com.allegis.snow.UI.VerifyServiceNowLogin">
+				<methods>
+					<exclude name="verifySeleniumCabMemberLogin" />
+					<exclude name="verifySeleniumApprovalAdminLogin" />
+					<exclude name="verifySeleniumChangeManagerLogin" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+
+</suite>
+
+	

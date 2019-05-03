@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Core-Regression" data-provider-thread-count="1"
+	parallel="tests" thread-count="1">
+	<listeners>
+		<listener class-name="com.framework.utils.listeners.TestListener" />
+		<listener class-name="com.framework.utils.listeners.CustomizedEmailableReport" />
+	</listeners>
+	<parameter name="browserUnderTest" value="chrome" />
+	<parameter name="environment" value="test" />
+	<parameter name="runLocation" value="local"/>
+	<parameter name="browserVersion" value="" />
+	<parameter name="operatingSystem" value="Windows" />
+	<parameter name="updateVersionOne" value="false"/>
+	<test name="New Hire On boarding North America SailPoint">
+		<classes>
+			<class name="com.allegis.sailpoint.PeopleSoftDataEntryTestEmployee">
+			
+			</class>
+
+		</classes>
+	</test>
+</suite>	
+	
