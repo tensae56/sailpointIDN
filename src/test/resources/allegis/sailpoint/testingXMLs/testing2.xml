@@ -10,7 +10,7 @@
 	<parameter name="environment" value="test" />
 	<parameter name="runLocation" value="docker" />
 	<parameter name="browserVersion" value="" />
-	<parameter name="operatingSystem" value="Windows" />
+	<parameter name="operatingSystem" value="linux" />
 	<parameter name="updateVersionOne" value="false"/>
 	<test name="New Hire On boarding North America SailPoint">
 		<classes>
